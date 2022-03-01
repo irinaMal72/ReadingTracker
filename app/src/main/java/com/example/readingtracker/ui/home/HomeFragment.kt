@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -30,10 +31,10 @@ private var _binding: FragmentHomeBinding? = null
     _binding = FragmentHomeBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textHome
     homeViewModel.text.observe(viewLifecycleOwner, Observer {
-      textView.text = it
+
     })
+    (activity as AppCompatActivity?)?.supportActionBar?.title = "Почитай-ка"
     return root
   }
 

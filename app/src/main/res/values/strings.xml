@@ -2,5 +2,6 @@
     <string name="app_name">Почитай-ка</string>
     <string name="title_home">Главная</string>
     <string name="title_dashboard">Профиль</string>
-    <string name="title_notifications">йцу</string>
+    <string name="title_notifications">Начнем ставить рекорд!</string>
+    <string name="title2">Скоро тут будут ваши достижения!</string>
 </resources>
