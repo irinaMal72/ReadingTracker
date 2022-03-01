@@ -34,6 +34,7 @@ private var _binding: FragmentDashboardBinding? = null
     dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
       textView.text = it
     })
+
     return root
   }
 
