@@ -28,12 +28,22 @@
             android:id="@+id/textView2"
             android:layout_width="212dp"
             android:layout_height="81dp"
-            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
             android:fontFamily="@font/roboto_slab"
             android:gravity="center"
             android:text="@string/title2"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_flowers"
+            tools:ignore="ImageContrastCheck"
+            android:contentDescription="@string/descriptionPicture" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -53,6 +63,58 @@
         app:layout_constraintVertical_bias="0.102"
         tools:ignore="MissingConstraints">
 
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:timePickerMode="spinner"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="160dp" />
+
+        <TextView
+            android:id="@+id/timeHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_slab"
+            android:onClick="showTimePicker"
+            android:text="@string/zeroTime"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/timeSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/timeSeparator"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/timeMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/zeroTime"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:visibility="invisible" />
+
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -63,7 +125,7 @@
         android:gravity="center"
         android:text="@string/title_notifications"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -4,4 +4,12 @@
     <string name="title_dashboard">Профиль</string>
     <string name="title_notifications">Начнем ставить рекорд!</string>
     <string name="title2">Скоро тут будут ваши достижения!</string>
+    <string name="zeroTime">00</string>
+    <string name="timeSeparator">:</string>
+    <string name="descriptionPicture">Тут должны быть цветочки :)</string>
+    <string name="title_goal">Моя цель</string>
+    <string name="title_no_messages">Не беспокоить</string>
+    <string name="title_from">С</string>
+    <string name="title_to">по</string>
+    <string name="title_save">Сохранить</string>
 </resources>

@@ -32,9 +32,7 @@ private var _binding: FragmentDashboardBinding? = null
     _binding = FragmentDashboardBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textDashboard
     dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
-      textView.text = it
     })
 
     return root
@@ -43,5 +41,12 @@ private var _binding: FragmentDashboardBinding? = null
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.timePickerGoal.setIs24HourView(true)
+        binding.timePickerFrom.setIs24HourView(true)
+        binding.timePickerTo.setIs24HourView(true)
     }
 }
