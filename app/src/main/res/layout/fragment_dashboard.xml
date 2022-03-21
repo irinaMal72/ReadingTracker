@@ -164,47 +164,47 @@
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ПН" />
+                android:text="@string/title_pn" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ВТ" />
+                android:text="@string/title_vt" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="СР" />
+                android:text="@string/title_sr" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ЧТ" />
+                android:text="@string/title_cht" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ПТ" />
+                android:text="@string/title_pt" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
-                android:text="СБ" />
+                android:text="@string/title_sb" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
-                android:text="ВС" />
+                android:text="@string/title_vs" />
         </LinearLayout>
     </HorizontalScrollView>
 

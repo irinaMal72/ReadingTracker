@@ -12,4 +12,13 @@
     <string name="title_from">С</string>
     <string name="title_to">по</string>
     <string name="title_save">Сохранить</string>
+
+    <string name="title_pn">ПН</string>
+    <string name="title_vt">ВТ</string>
+    <string name="title_sr">СР</string>
+    <string name="title_cht">ЧТ</string>
+    <string name="title_pt">ПТ</string>
+    <string name="title_sb">СБ</string>
+    <string name="title_vs">ВС</string>
+
 </resources>
