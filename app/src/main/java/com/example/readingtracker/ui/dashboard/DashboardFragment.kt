@@ -1,5 +1,6 @@
 package com.example.readingtracker.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -57,5 +58,7 @@ override fun onDestroyView() {
         binding.timePickerTo.setIs24HourView(true)
         binding.timePickerTo.hour = 7
         binding.timePickerTo.minute = 0
+
     }
+
 }

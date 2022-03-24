@@ -170,6 +170,7 @@
 
             <Button
                 android:id="@+id/button9"
+
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
@@ -186,7 +187,7 @@
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
-                android:elevation="1dp"
+                android:elevation= "1dp"
                 android:fontFamily="@font/roboto_slab"
                 android:shadowRadius="@integer/material_motion_duration_long_2"
                 android:text="@string/title_vt"
@@ -199,7 +200,7 @@
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
-                android:elevation="1dp"
+                android:elevation="20dp"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_sr"
                 android:textColor="@color/black"
@@ -210,7 +211,7 @@
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:elevation="1dp"
+                android:elevation="20dp"
                 android:background="@drawable/border"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_cht"
@@ -224,11 +225,11 @@
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:elevation="1dp"
                 android:background="@drawable/border"
+                android:elevation="1dp"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_pt"
-                android:textColor="#757575"
+                android:textColor="#090909"
                 android:textSize="12sp"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
 

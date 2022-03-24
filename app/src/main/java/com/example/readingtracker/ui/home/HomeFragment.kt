@@ -66,12 +66,19 @@ override fun onDestroyView() {
         binding.progressBar.progress = binding.timePicker.hour * 60 + binding.timePicker.minute
 
         binding.timePicker.setOnTimeChangedListener(TimePicker.OnTimeChangedListener { timePicker, hour, minute ->
+            binding.cardView3.setVisibility(View.INVISIBLE)
             binding.timeHours.text = hour.toString()
             binding.timeMinutes.text = minute.toString()
             binding.progressBar.progress = hour * 60 + minute
             homeViewModel.currentHours = hour
             homeViewModel.currentMinutes = minute
+            if ( hour * 60 + minute >=30)
+                binding.cardView3.setVisibility(View.VISIBLE)
         })
+
+        binding.button2.setOnClickListener {
+            binding.cardView3.setVisibility(View.INVISIBLE)
+        }
 
     }
     fun showHideTimePicker(result:Boolean){

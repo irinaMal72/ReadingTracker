@@ -2,7 +2,7 @@
     <string name="app_name">Почитай-ка</string>
     <string name="title_home">Главная</string>
     <string name="title_dashboard">Профиль</string>
-    <string name="title_notifications">Начнем ставить рекорд!</string>
+    <string name="title_notifications">Ваш личный рекорд 12 дней!</string>
     <string name="title2">Скоро тут будут ваши достижения!</string>
     <string name="zeroTime">00</string>
     <string name="timeSeparator">:</string>
@@ -21,4 +21,5 @@
     <string name="title_sb">СБ</string>
     <string name="title_vs">ВС</string>
 
+    <string name="mess1">Вы читали 7 дней подряд! До нового рекорда 5 дней!</string>
 </resources>
