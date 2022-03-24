@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="@font/roboto_slab"
-        android:gravity="center"
+        android:gravity="left"
         android:text="@string/title_goal"
 
         android:textColor="@color/black"
@@ -39,6 +39,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.172"
@@ -53,7 +54,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -86,7 +87,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/roboto_slab"
-            android:gravity="center"
+            android:gravity="left"
 
             android:text="@string/title_from"
             android:textColor="@color/black"
@@ -99,12 +100,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
@@ -135,17 +136,19 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:fontFamily="@font/roboto_slab"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="-70dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_slab"
         android:text="@string/title_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.57" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -167,47 +170,48 @@
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="54dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
-                android:background="#00FBFBFB"
+                android:background="@drawable/border"
+                android:elevation="1dp"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_pn"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                android:shadowRadius="@integer/material_motion_duration_long_2"
-                android:elevation="20dp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="53dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FBFBFB"
+                android:background="@drawable/border"
+                android:elevation="1dp"
                 android:fontFamily="@font/roboto_slab"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
                 android:text="@string/title_vt"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="53dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="52dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FBFBFB"
+                android:background="@drawable/border"
+                android:elevation="1dp"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_sr"
                 android:textColor="@color/black"
-                android:textSize="12sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#00FBFBFB"
+                android:elevation="1dp"
+                android:background="@drawable/border"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_cht"
                 android:textColor="@color/black"
@@ -220,7 +224,8 @@
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#00FBFBFB"
+                android:elevation="1dp"
+                android:background="@drawable/border"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_pt"
                 android:textColor="#757575"
@@ -230,8 +235,9 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="53dp"
+                android:elevation="1dp"
                 android:layout_height="wrap_content"
-                android:background="#00FBFBFB"
+                android:background="@drawable/border"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_sb"
                 android:textColor="@color/black"
@@ -241,8 +247,9 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="53dp"
+                android:elevation="1dp"
                 android:layout_height="wrap_content"
-                android:background="#00FBFBFB"
+                android:background="@drawable/border"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/title_vs"
                 android:textColor="@color/black"

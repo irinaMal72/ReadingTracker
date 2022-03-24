@@ -10,4 +10,6 @@ class DashboardViewModel : ViewModel() {
         value = "This is dashboard Fragment"
     }
     val text: LiveData<String> = _text
+    var currentHours:Int = 0
+    var currentMinutes:Int = 0
 }

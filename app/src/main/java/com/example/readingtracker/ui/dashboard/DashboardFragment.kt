@@ -46,7 +46,16 @@ override fun onDestroyView() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.timePickerGoal.setIs24HourView(true)
+        //тут задаем начальные значения часов и минут
+        binding.timePickerGoal.hour = 0
+        binding.timePickerGoal.minute = 30
+
         binding.timePickerFrom.setIs24HourView(true)
+        binding.timePickerFrom.hour = 23
+        binding.timePickerFrom.minute = 0
+
         binding.timePickerTo.setIs24HourView(true)
+        binding.timePickerTo.hour = 7
+        binding.timePickerTo.minute = 0
     }
 }
